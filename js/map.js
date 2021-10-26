@@ -1,84 +1,121 @@
 const map = [{
         name: "map1",
         left: "75%",
-        top: "70%"
+        city: "Алматы",
+        adress: "Жетысу 2, 71В, 6 этаж.",
+        top: "70%",
+    }, {
+        name: "map1",
+        left: "80%",
+        city: "Алматы",
+        adress: "4-мкр, 4/1",
+        top: "63%",
+    },
+    {
+        name: "map1",
+        left: "70%",
+        city: "Алматы",
+        adress: "1-мкр, 81",
+        top: "63%",
+    },
+    {
+        name: "map1",
+        left: "73%",
+        city: "Алматы",
+        adress: "БЦ Жар-Су, Кунаева, 38, 1 этаж.",
+        top: "77%",
+    },
+    {
+        name: "map1",
+        left: "78%",
+        city: "Алматы",
+        adress: "Орбита 3-й мкр, 1, 1 этаж",
+        top: "73%",
     },
     {
         name: "map2",
         left: "74%",
-        top: "65%"
-    },
-    {
-        name: "map3",
-        left: "60%",
-        top: "70%"
+        city: "Алматы",
+        adress: "Толе би, 184А",
+        top: "65%",
     },
     {
         name: "map4",
-        left: "55%",
-        top: "80%"
+        left: "48%",
+        city: "Кызылорда",
+        adress: "Абая, 47Г",
+        top: "66%",
     },
     {
         name: "map5",
         left: "45%",
-        top: "70%"
+        city: "Кызылорда",
+        adress: "Коркыт Ата, 52",
+        top: "70%",
     },
     {
         name: "map6",
         left: "15%",
-        top: "74%",
+        adress: "Мусы Баймуханова, 64/1",
+        city: "Атырау",
+        top: "52%",
     },
     {
-        name: "map7",
-        left: "17%",
-        top: "53%"
+        name: "map6",
+        left: "18%",
+        adress: "Курмангазы д 5",
+        city: "Атырау",
+        top: "60%",
     },
     {
-        name: "map8",
-        left: "13%",
-        top: "37%"
+        name: "map6",
+        left: "28%",
+        adress: "Ломоносова, 26",
+        city: "Актобе",
+        top: "40%",
     },
     {
-        name: "map9",
-        left: "27%",
-        top: "43%"
+        name: "map6",
+        left: "34%",
+        adress: "Абилкайыр Хана, 52",
+        city: "Актобе",
+        top: "44%",
     },
-    {
-        name: "map10",
-        left: "41%",
-        top: "18%"
-    },
-
     {
         name: "map11",
         left: "52%",
-        top: "5%"
+        adress: "Абая, 32",
+        city: "Нур-Султан",
+        top: "27%"
     },
     {
         name: "map12",
         left: "54%",
-        top: "12%"
+        adress: "Жеңіс, 72",
+        city: "Нур-Султан",
+        top: "22%"
     },
     {
         name: "map13",
         left: "60%",
+        adress: "Қонаева,2",
+        city: "Нур-Султан",
         top: "30%"
     },
     {
-        name: "map14",
-        left: "65%",
-        top: "39%"
+        name: "map6",
+        left: "62%",
+        adress: "Қонаева,14",
+        city: "Нур-Султан",
+        top: "24%",
     },
     {
         name: "map15",
         left: "75%",
-        top: "20%"
-    },
-    {
-        name: "map17",
-        left: "90%",
-        top: "43%"
-    },
+        adress: "Каирбаева, 82",
+        city: "Павлодар",
+        top: "20%",
+    }
 ]
 
 const mapImage = document.querySelector(".map-image")
@@ -97,8 +134,8 @@ map.forEach((a) => {
         <img src="https://avatars.mds.yandex.net/get-altay/1971563/2a0000016d352a639e3af2073a2cb882cb9b/L" alt="" class="src">
         <div class="desc">
             <p>
-                <span>Город: </span> Алматы <br>
-                <span>Адресс: </span> 4-мкр, 4/1 <br> 
+                <span>Город: </span> ${a.city} <br>
+                <span>Адресс: </span> ${a.adress} <br> 
             </p>
         </div>
     </div>
