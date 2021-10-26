@@ -905,7 +905,7 @@ button:focus {
 .our-team .pic:before,
 .our-team .pic:after {
     content: "";
-    width: 200%;
+    /* width: 200%; */
     height: 80%;
     background: rgba(38, 37, 37, 0.8);
     position: absolute;
@@ -985,10 +985,6 @@ button:focus {
     transform: rotate(180deg);
 }
 
-.our-team .team-content {
-    padding: 20px;
-}
-
 .our-team .title {
     font-size: 22px;
     font-weight: 700;
@@ -1003,7 +999,7 @@ button:focus {
     font-size: 17px;
     font-weight: 600;
     color: #333333;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 @media only screen and (max-width: 990px) {

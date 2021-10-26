@@ -1,5 +1,4 @@
-const  map = [
-    {
+const map = [{
         name: "map1",
         left: "75%",
         top: "70%"
@@ -130,3 +129,27 @@ preserveAspectRatio="xMidYMid meet" viewBox="0 0 792.54694 434.92221" style="tra
 </svg>`;
 
 
+
+$(document).ready(function() {
+    $('.slider').slick({
+        arrows: true,
+        dots: true,
+        slidesToShow: 4,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
